@@ -1,0 +1,358 @@
+/* cart summary Box is same as on cart page its css is on cart page css file */
+
+/* All other css of this account page is Here */
+
+
+
+.check_out_option_section {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 0px 10px;
+}
+.custom_container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.check_out_option_form_box {
+  display: grid;
+  grid-template-columns: 1fr 285px;
+  gap: 30px 30px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: ". .";
+}
+
+/*account login/create section start */
+
+.check_out_option_account_form_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 30px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: ". .";
+}
+.check_out_option_form_box_one_content {
+  background: #f6f6f6;
+  padding: 45px 35px;
+  border-radius: 2px;
+  width: 100%;
+  display: grid;
+  float: left;
+  gap: 25px 0px;
+}
+.check_out_option_form_box_one_content_header {
+  display: grid;
+  flex-direction: column;
+  gap: 8px 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.check_out_option_form_box_one_content_header h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.check_out_option_form_box_one_content_header p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px;
+}
+.check_out_option_form_box_one_guest_btn a {
+  background: #212121;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.check_out_option_form_box_one_guest_btn a span {
+  transition: all 0.5s ease;
+}
+.check_out_option_form_box_one_guest_btn a:hover {
+  color: #ffffff;
+  background: #212121;
+  text-decoration: none;
+}
+.check_out_option_form_box_one_guest_btn a:hover span {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.check_out_option_form_box_one_acoiunt_btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.check_out_option_form_box_one_account_btn p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px;
+}
+.check_out_option_form_box_one_account_btn p a {
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.check_out_option_form_box_one_account_btn p a:hover {
+  color: #000000;
+  transition: all 0.5s ease;
+  text-decoration: underline;
+}
+
+.check_out_option_form_box_two_content {
+  background: #f6f6f6;
+  padding: 45px 35px;
+  border-radius: 2px;
+  width: 100%;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  gap: 25px 0px;
+}
+.check_out_option_form_box_two_content_header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.check_out_option_form_box_two_content_header h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.check_out_option_form_box_two_content_signin_form {
+  display: grid;
+  gap: 15px 0px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.check_out_option_box_two_signin_form_input_fields {
+  display: grid;
+  gap: 4px 0px;
+}
+.check_out_option_box_two_signin_form_input_fields input {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #f6f6f6;
+}
+.check_out_option_box_two_signin_form_input_fields input:focus-visible {
+  border: 1px solid rgba(0, 0, 0, 0.16) !important;
+}
+.check_out_option_box_two_signin_form_input_fields input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.7);
+}
+.check_out_option_box_two_signin_form_signin_btn button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #000;
+  border-radius: 4px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: unset;
+}
+.check_out_option_form_box_two_google_signin_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check_out_option_form_box_two_google_signin_btn a {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check_out_option_form_box_two_google_signin_btn a span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #000000;
+  padding-left: 6px;
+}
+.check_out_option_form_box_two_account_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.check_out_option_form_box_two_account_btn p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px;
+}
+.check_out_option_form_box_two_account_btn p a {
+  color: #000000;
+}
+.check_out_option_box_two_form_divider {
+  width: 100%;
+}
+.check_out_option_box_two_form_divider {
+  width: 100%;
+}
+.form_divider_lines {
+  display: flex;
+  gap: 0px 6px;
+  margin: 0px;
+  justify-content: center;
+}
+.form_divider_lines li {
+  position: relative;
+  list-style: none;
+}
+.form_divider_lines li::before {
+  position: absolute;
+  content: "";
+  background-image: url("https://tossdown.site/images/870c40fb16f3e791498aded5133df075_1640356506.png");
+  width: 140px;
+  height: 2px;
+  top: 53%;
+  right: 25px;
+}
+.form_divider_lines li::after {
+  height: 1px;
+  position: absolute;
+  content: "";
+  background-image: url("https://tossdown.site/images/870c40fb16f3e791498aded5133df075_1640356506.png");
+  width: 140px;
+  height: 2px;
+  left: 25px;
+  top: 53%;
+}
+.check_out_option_box_two_form_divider small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  bottom: -7.5px;
+  left: 0px;
+  justify-content: center;
+}
+.check_out_option_box_two_form_divider small::before {
+  content: " ";
+  position: absolute;
+  background: #f6f6f6;
+  height: 1px;
+  bottom: 6.5px;
+  left: 9.9em;
+  right: -0.2em;
+  z-index: -1;
+  width: 10%;
+}
+/*account login/create section End */
+
+/* media query for account login/create section Start */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .check_out_option_form_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .check_out_option_form_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .check_out_option_account_form_box {
+    grid-template-columns: 1fr;
+    grid-template-areas: ".";
+  }
+}
+@media (max-width: 540px) {
+  .check_out_option_form_box_two_content {
+    padding: 45px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .form_divider_lines li::before {
+    width: 130px;
+    height: 2px;
+  }
+  .form_divider_lines li::after {
+    width: 130px;
+  }
+}
+/* media query for account login/create section End */
