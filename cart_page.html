@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/cart_page.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="script/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section class="web_header">
+
+    <div class="web_header_0_min">
+      <div class="custom_container">
+        <div class="web_header_0">
+          <a class="mobile_res_toggle_btn"><i class="fal fa-bars"></i></a>
+          <div class="web_header_logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+          </div>
+
+          <div class="web_header_right_main">
+            <div class="web_header_search">
+              <div class="input-group desktop_header_search">
+                <div class="form-outline">
+                  <input type="search" id="form1" class="form-control" placeholder="Search" />
+                </div>
+                <div class="dropdown">
+                  <button class=" dropdown-toggle header_category_toggle_btn" type="button" id="header_category_toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All categories
+                  </button>
+                  <div class="dropdown-menu header_category_toggle_menu_list" aria-labelledby="header_category_toggle">
+                    <a href="">View Order</a>
+                    <a href="">View Profile</a>
+                    <a href="">Logout</a>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary">
+                  <i class="fas fa-search"></i>
+                </button>
+
+              </div>
+            </div>
+
+            <div class="web_header_cart_side">
+              <div class="web_header_login_signup">
+                <a class="login_signup_btn" href="login.html">
+                  Login / Signup
+                </a>
+
+                <div class="dropdown header_account_dropdown">
+                  <button class="header_account_btn dropdown-toggle" type="button" id="header_account_btn"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My account
+                  </button>
+                  <div class="dropdown-menu header_account_menu_list" aria-labelledby="header_account_btn">
+                    <a href="">View Order</a>
+                    <a href="">View Profile</a>
+                    <a href="">Logout</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile_header_login_signup">
+                <a class="login_signup_btn" href="login.html">
+                  <i class="fal fa-user"></i>
+                </a>
+              </div>
+              <div class="header_cart_box">
+                <a href="cart_page.html" class="header_cart"><i class="fal fa-shopping-cart"></i>
+                  <p>0</p> <span>Cart</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="web_header_1_min">
+      <div class="custom_container">
+        <div class="web_header_1">
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">New Arrivals</a>
+          <a href="shop.html">Sales</a>
+          <a href="shop.html">Aluminum Foil</a>
+          <a href="shop.html">Aluminum Pan</a>
+          <a href="shop.html">Aprons</a>
+          <a>Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="web_header_2_min">
+      <form>
+        <div class="mobile_header_search_section">
+          <i class="fal fa-search"></i>
+          <input type="search" placeholder="search here">
+        </div>
+      </form>
+    </div>
+
+
+  </section>
+  <div class="mobile_res_toggle_content">
+    <div class="mobile_res_toggle_content_cancle">
+      <a class="mobile_res_toggle_btn" style="font-size:20px;"><i class="fas fa-times"
+          style="font-weight: 300;"></i></a>
+    </div>
+
+    <ul class="mobile_res_toggle_list_1">
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="shop.html">Shop</a> </li>
+      <li><a href="about.html">About</a> </li>
+      <li><a href="contact.html">Contact</a> </li>
+    </ul>
+
+  </div>
+
+  <section class="product_shopping_cart_section">
+    <div class="custom_container">
+
+      <div class="shopping_cart_main_box">
+
+        <!-- cart product list section start  -->
+        <div class="shopping_cart_product_list_box">
+
+          <div class="shopping_cart_product_heading">
+            <div class="shopping_cart_product_heading_left">
+              <h2>My cart</h2>
+            </div>
+
+          </div>
+
+          <div class="shopping_cart_product_list_main">
+            <div class="shopping_cart_product_list_header">
+              <ul>
+                <li style="width: 13%;">
+                  <p>Product</p>
+                </li>
+                <li style="width: 37%;"></li>
+                <li style="width: 34%;">
+                  <p class="cart_page_center_align_class">Quantity</p>
+                </li>
+                <li style="width: 16%;">
+                  <p class="cart_page_right_align_class">Total</p>
+                </li>
+              </ul>
+            </div>
+            <div class="shopping_cart_product_list_content">
+              <div class="shopping_cart_product_list_content_box">
+                <ul>
+                  <li style="width: 13%;">
+                    <div class="shopping_cart_product_list_header_responsive">
+                      <p>Product</p>
+                    </div>
+                    <div class="shopping_cart_single_product_img"><img src="images/Containers And Bowls.png" alt="imge">
+                    </div>
+                  </li>
+                  <li style="width: 37%;">
+                    <div class="shopping_cart_product_list_header_responsive">
+                      <p>Description</p>
+                    </div>
+                    <div class="shopping_cart_single_product_discription">
+                      <span>Private Lable</span>
+                      <p>Aluminum Pan:Hsl</p>
+                      <small>$ 20.22</small>
+                    </div>
+                  </li>
+
+                  <li style="width: 34%;" class="product_qty_btn_center_align_class">
+                    <div class="shopping_cart_product_list_header_responsive">
+                      <p>Quantity</p>
+                    </div>
+                    <div class="single_product_qty_btn_main">
+                      <div class="shopping_cart_single_product_qty_btn">
+                        <a class="counter_minus_btn"><i class="fa fa-minus"></i></a>
+                        <span>1</span>
+                        <a class="counter_plus_btn"><i class="fa fa-plus"></i></a>
+                      </div>
+                      <a>remove</a>
+                    </div>
+                  </li>
+                  <li style="width: 16%;position: relative;">
+                    <div class="shopping_cart_product_list_header_responsive">
+                      <p>Subtotal</p>
+                    </div>
+                    <div class="shopping_cart_single_product_subtotal">
+                      <div class="shopping_cart_single_product_subtotal_prices">
+                        <p>$ 50.99</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="product_shopping_cart_footer_section">
+            <div class="accordion general_collaps_2" id="faq">
+             
+                <div class="card_header" id="faqhead2">
+                  <a href="#" class="" data-toggle="collapse" data-target="#faq2" aria-expanded="true"
+                    aria-controls="faq1">Estimate Shipping</a>
+                </div>
+      
+                <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                  <div class="card_body">
+                 test
+                  </div>
+             
+              </div>
+            </div>
+            </div>
+
+          <!-- <div class="product_shopping_cart_footer_section">
+          <div class="product_shopping_cart_footer_box_one">
+              <i class="far fa-heart"></i>
+              <h2>Saved for later</h2>
+          </div>
+          <div class="product_shopping_cart_footer_box_two">
+              <small>You have <span>0</span> item(s) saved for later</small>
+          </div>
+      </div> -->
+
+        </div>
+        <!-- cart product list section End  -->
+
+
+        <!-- Cart bill Summary section start -->
+        <div class="shopping_cart_total_bill_section">
+          <div class="shopping_cart_total_bill_box">
+            <!-- <div class="shopping_cart_total_bill_box_heading"><h5>Cart Summary</h5></div> -->
+            <div class="shopping_cart_total_bill_box_content">
+              <div class="shopping_cart_total_bill_final_price_box">
+                <p>Total</p><span>$ 129.99</span>
+              </div>
+              <!-- <div class="shopping_cart_total_bill_box_inner_content">
+                   <div class="total_bill_box_inner_subtotal_heading"><p>Subtotal</p><small>3 Item(s)</small></div><span>NOK 100.99</span>
+               </div> -->
+              <!-- <div class="shopping_cart_total_bill_box_inner_content">
+                <p>Total Discount</p><span>10%</span>
+               </div>
+               <div class="shopping_cart_total_bill_box_inner_content">
+                <p>GST</p><span>16%</span>
+               </div>
+               <div class="shopping_cart_total_bill_box_inner_content">
+                <p>Delivery Charges</p><span>NOK 5.99</span>
+               </div> -->
+
+            </div>
+            <div>
+            <div class="accordion general_collaps" id="faq">
+             
+                <div class="card_header" id="faqhead1">
+                  <a href="#" class="" data-toggle="collapse" data-target="#faq1" aria-expanded="true"
+                    aria-controls="faq1">Order instructions</a>
+                </div>
+      
+                <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                  <div class="card_body">
+                 test
+                  </div>
+             
+              </div>
+            </div>
+            </div>
+            <div class="shopping_cart_total_bill_divider"></div>
+
+            <div class="shopping_cart_total_bill_taxes_box">
+              <p>Taxes and Shipping will be calculated on checkout</p>
+            </div>
+
+            <!-- <div class="shopping_cart_total_bill_divider"></div> -->
+
+
+
+            <div class="shopping_cart_total_bill_proceeding_btn"><a href="checkout_page.html">Checkout</a></div>
+          </div>
+
+
+          <div class="cart_page_delivery_mode_section">
+            <div class="cart_page_delivery_mode_heading">
+              <h4>100% secure payment</h4>
+            </div>
+            <!-- <div class="cart_page_delivery_mode_list">
+              <div class="cart_page_delivery_mode_single_list">
+                <img src="https://tossdown.site/images/4eccbfa59646841926af8bcc3932c6c1_1640269297.png">
+                <div class="cart_page_delivery_mode_single_list_content">
+                  <h6>Delivery Available</h6>
+                  <small>Delivery available 24/7</small>
+                </div>
+              </div>
+
+              <div class="cart_page_delivery_mode_single_list">
+                <img src="https://tossdown.site/images/822d7fa6daa27a610332a72c51ccb5a3_1640269341.png">
+                <div class="cart_page_delivery_mode_single_list_content">
+                  <h6>Pickup Available</h6>
+                  <small>Pickup available at our stores</small>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+        <!-- Cart bill Summary section End -->
+
+      </div>
+  </section>
+
+
+
+  <footer>
+    <section class="footer-section">
+      <div class="custom-container">
+        <div class="footer-data-box">
+          <div class="footer-data-box-detail ">
+            <div class="footer-detail-box-one">
+              <figure>
+                <img src="images/logo.png" />
+              </figure>
+              <p>We are wholesale distributors of Restaurant and Industrial supplies.</p>
+              <h3>Follow us on:</h3>
+              <div class="footer-socail-links"><a href="https://www.facebook.com" target="blank"><i
+                    class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com" target="blank"><i
+                    class="fab fa-instagram"></i></a> <a href="https://linkedin.com" target="blank"><i
+                    class="fab fa-linkedin-in"></i></a></div>
+            </div>
+          </div>
+          <div class="footer-data-box-detail">
+            <div class="footer-detail-box-two">
+              <div class="footer-detail-box-heading accordion modtitle">
+                <h3 class="footer-collapse-icons">Site Links</h3>
+              </div>
+              <div class="modcontent panel">
+                <ul class="footer-detail-box-content-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="shop.html">New Arrivals</a></li>
+                  <li><a href="shop.html">Sales</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="location.html">Location</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-data-box-detail">
+            <div class="footer-detail-box-two">
+              <div class="footer-detail-box-heading accordion modtitle">
+                <h3 class="footer-collapse-icons">Useful Links</h3>
+              </div>
+              <div class="modcontent panel">
+                <ul class="footer-detail-box-content-list">
+                  <li><a>Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="">My Orders</a></li>
+                  <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-data-box-detail">
+            <div class="footer-detail-box-two">
+              <div class="footer-detail-box-heading accordion modtitle">
+                <h3 class="footer-collapse-icons">Categories</h3>
+              </div>
+              <div class="modcontent panel">
+                <ul class="footer-detail-box-content-list">
+                  <li><a href="shop.html">Aluminum Foil</a></li>
+                  <li><a href="shop.html">Aluminum Pan</a></li>
+                  <li><a href="shop.html">Aprons</a></li>
+                  <li><a href="shop.html">Jet Foil</a></li>
+                  <li><a href="shop.html">HFA</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-data-box-detail">
+            <div class="footer-detail-box-two ">
+              <div class="footer-detail-box-heading accordion modtitle">
+                <h3 class="footer-collapse-icons">Contact</h3>
+              </div>
+              <div class="modcontent panel accordion modtitle">
+                <ul class="footer-contact-list ">
+                  <li><i class="fal fa-phone" aria-hidden="true"></i><a href="tel:  (905) 444-8585"> (905) 444-8585</a>
+                  </li>
+                  <li><i class="fal fa-envelope" aria-hidden="true"></i><a
+                      href="mailto:info@gmail.com">info@gmail.com</a></li>
+                  <li><i class="fal fa-map-marker-alt" aria-hidden="true"></i><a>900 Hopkins Street, Unit #2 Whitby,
+                      ON</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+
+
+</body>
+
+</html>

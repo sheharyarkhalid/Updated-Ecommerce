@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawsome link start-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.js" integrity="sha512-uKxirna7d5STmVXEMQYBVRW1nERrqHjwOubv4QcK4oYaaifLiEnN/aLIJxVsyK4R1K+awpNIG73RaQfT1DZ8ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- fontawsome link end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      /* drag btn css start */
+      #parent {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
+      .draging_icon_btn{
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+        }
+      .draging_icon {
+         background: #0f994b;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: relative;
+        /* position: absolute;
+        bottom: 40px; */
+      }
+      .draging_icon i{
+        font-size: 22px;
+        color: #ffffff;
+      } 
+    .draging_icon::before {
+        content: "0";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #e21d38;
+        top: 0px;
+        right: 0px;
+        border-radius: 50%;
+      } 
+      .draging_icon {
+        visibility: visible;
+        opacity: 1px;
+        transition: 0.8s;
+      }
+      .draging_icon.active {
+        visibility: hidden;
+        opacity: 0px;
+        transition: 0.3s;
+      }
+      /* drag btn css end */
+      .cart_navigation {
+        transform: translate(100%);
+        transition: 0.3s;
+      }
+      .cart_navigation.active {
+        transform: translate(0%);
+        transition: 0.5s;
+        transition-delay: 0.5s, 0s;
+      }
+
+      .cart_navigation {
+        position: fixed;
+        right: 0px;
+        background: #ffffff;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        height: 100vh;
+        width: 320px;
+        z-index: 999;
+        top: 0px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 24px 0px 24px;
+      }
+
+      .cart_navigation_content {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px 0px;
+        width: 100%;
+        padding-top: 20px;
+      }
+      .cart_navigation_header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cart_navigation_heading {
+        display: flex;
+        align-items: flex-end;
+      }
+      .cart_navigation_heading h3 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 37px;
+        color: #212121;
+        padding-right: 8px;
+        margin: 0px;
+      }
+      .cart_navigation_heading span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #9b9bb4;
+        padding-bottom: 3px;
+      }
+      .cart_navigation_header .cart_navigation_close_btn i {
+        color: #000000;
+        font-size: 16px;
+      }
+
+      .cart_navigation_item_list {
+        display: block;
+        gap: 18px;
+        height: calc(100vh - 14em);
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #939495 transparent;
+      }
+      .cart_navigation_single_item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        padding-bottom: 18px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 18px;
+      }
+      .cart_navigation_single_item figure {
+        width: 56px;
+        height: 56px;
+        margin: 0px;
+      }
+      .cart_navigation_single_item figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #f6f6f6;
+        border-radius: 2px;
+      }
+      .cart_navigation_single_item_detail {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8px;
+      }
+
+      .cart_navigation_single_item_detail p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: flex-start;
+        text-transform: capitalize;
+        color: #212121;
+        padding-bottom: 8px;
+        margin: 0px;
+      }
+
+      .cart_navigation_single_item_detail p span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: capitalize;
+        color: #9b9bb4;
+        padding-right: 5px;
+      }
+
+      .cart_navigation_single_item_detail strong {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        padding-bottom: 8px;
+        color: #212121;
+        margin: 0px;
+        padding-left: 18px;
+      }
+      .cart_navigation_qty_main {
+        display: flex;
+        align-items: center;
+        padding-left: 18px;
+      }
+      .cart_navigation_qty_plus_minu_btns {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        padding: 5px 4px;
+      }
+      .counter_minus_btn a {
+        width: 24px !important;
+        height: 24px !important;
+        background: #f6f6f6;
+        border-radius: 2px;
+        color: #000000 !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0px !important;
+      }
+      .counter_minus_btn a i {
+        font-size: 14px;
+      }
+      .counter_plus_btn a {
+        width: 24px !important;
+        height: 24px !important;
+        background: #000000;
+        border-radius: 2px;
+        color: #ffffff !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0px !important;
+      }
+
+      .counter_plus_btn a i {
+        font-size: 14px;
+      }
+      .total_count_quantity {
+        padding: 0px 12px;
+        color: #000000;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600 !important;
+      }
+
+      .cart_navigation_del_btns {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        padding: 5px 4px;
+      }
+      .cart_navigation_del_btns a {
+        width: 24px !important;
+        height: 24px !important;
+        border-radius: 2px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0px !important;
+      }
+      .cart_navigation_del_btns a i {
+        color: #e21d38;
+        font-size: 18px;
+      }
+
+      .cart_navigation_btn_list {
+        display: flex;
+      }
+      .cart_navigation_btn_list .cart_navigation_checkout_btn {
+        margin-right: 15px;
+      }
+      .cart_navigation_proceeding_btn {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 30px;
+        display: grid;
+        gap: 15px;
+      }
+      .subtotal_price_calculation {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .subtotal_price_calculation span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+      .cart_navigation_checkout_btn {
+        display: flex;
+        width: 100%;
+        background: #0f994b;
+        border-radius: 4px;
+        padding: 20px 0px;
+      }
+      .cart_navigation_checkout_btn a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+      .cart_navigation_view_cart_btn {
+        display: flex;
+        width: 100%;
+        background: #212121;
+        border-radius: 4px;
+        padding: 20px 0px;
+      }
+      .cart_navigation_view_cart_btn a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+      @media (max-width: 991px) {
+        .cart_navigation_proceeding_btn {
+          margin-bottom: 70px;
+        }
+      }
+      @media (max-width: 767px) {
+        .cart_navigation_proceeding_btn {
+          margin-bottom: 70px;
+        }
+        .cart_navigation_item_list {
+          height: calc(100vh - 18em);
+        }
+      }
+      @media (max-width: 540px) {
+        .cart_navigation_item_list {
+          height: calc(100vh - 18em);
+        }
+      }
+    </style>
+    <div class="cart_navigation">
+      <div class="cart_navigation_content">
+        <div class="cart_navigation_header">
+          <div class="cart_navigation_heading">
+            <h3>Your Cart</h3>
+            <span>03</span>
+          </div>
+          <div class="cart_navigation_close_btn">
+            <i class="close_cart_navigation_btn fas fa-times"></i>
+          </div>
+        </div>
+        <div class="cart_navigation_item_list">
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
+                  </div>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart_navigation_proceeding_btn">
+        <div class="subtotal_price_calculation">
+          <span>Subtotal</span><span>CAD 129.99</span>
+        </div>
+        <div class="cart_navigation_btn_list">
+          <div class="cart_navigation_checkout_btn"><a>Checkout</a></div>
+          <div class="cart_navigation_view_cart_btn"><a>View Cart</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="draging_icon_parent" id="parent">
+     <div class="draging_icon_btn">
+      <div class="draging_icon">
+        <i class="fal fa-shopping-cart"></i>
+      </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      $(function () {
+        $(".draging_icon").draggable({ containment: "parent" });
+      });
+
+      $(".draging_icon").click(function () {
+        $(".cart_navigation").addClass("active");
+        $(".draging_icon").addClass("active");
+      });
+      $(".close_cart_navigation_btn").click(function () {
+        $(".cart_navigation").removeClass("active");
+        $(".draging_icon").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

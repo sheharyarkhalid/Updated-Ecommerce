@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" type="text/css" href="css/checkout_page.css" />
+  <link rel="stylesheet" type="text/css" href="css/cart_page.css" />
+  <link rel="stylesheet" type="text/css" href="css/cart_summary.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- 
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    /> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+  <section class="web_header"> 
+
+    <div class="web_header_0_min">
+      <div class="custom_container">
+        <div class="web_header_0">
+       <a class="mobile_res_toggle_btn"><i class="fal fa-bars"></i></a>
+      <div class="web_header_logo">
+        <a href="index.html"><img src="images/logo.png"></a>
+      </div>
+     
+      <div class="web_header_right_main">
+      <div class="web_header_search">
+        <div class="input-group desktop_header_search">
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control" placeholder="Search" />
+          </div>
+          <div class="dropdown">
+            <button class=" dropdown-toggle header_category_toggle_btn" type="button" id="header_category_toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             All categories
+            </button>
+            <div class="dropdown-menu header_category_toggle_menu_list" aria-labelledby="header_category_toggle">
+              <a href="">View Order</a>
+            <a href="">View Profile</a>
+            <a href="">Logout</a>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+          
+        </div>
+      </div>
+
+      <div class="web_header_cart_side">
+        <div class="web_header_login_signup">
+         <a class="login_signup_btn" href="login.html">
+          Login / Signup
+         </a>
+          
+         <div class="dropdown header_account_dropdown">
+          <button class="header_account_btn dropdown-toggle" type="button" id="header_account_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           My account
+          </button>
+          <div class="dropdown-menu header_account_menu_list" aria-labelledby="header_account_btn">
+            <a href="">View Order</a>
+            <a href="">View Profile</a>
+            <a href="">Logout</a>
+          </div>
+        </div>
+       </div>
+       <div class="mobile_header_login_signup">
+        <a class="login_signup_btn" href="login.html">
+          <i class="fal fa-user"></i>
+        </a>
+      </div>
+       <div class="header_cart_box">
+      <a href="cart_page.html" class="header_cart"><i class="fal fa-shopping-cart"></i><p>0</p> <span>Cart</span></a>
+      </div>
+       </div>
+       </div>
+
+       </div>
+      
+    </div>
+   </div>
+
+   <div class="web_header_1_min">
+    <div class="custom_container">
+      <div class="web_header_1">
+        <a href="shop.html">All Products</a>
+        <a href="shop.html">New Arrivals</a>
+        <a href="shop.html">Sales</a>
+        <a href="shop.html">Aluminum Foil</a>
+        <a href="shop.html">Aluminum Pan</a>
+        <a href="shop.html">Aprons</a>
+        <a>Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+   </div>
+    </div>
+
+    <div class="web_header_2_min">
+      <form>
+        <div class="mobile_header_search_section">
+        <i class="fal fa-search"></i>
+        <input type="search" placeholder="search here">
+        </div>
+    </form>
+      </div>
+  
+
+  </section>
+  <div class="mobile_res_toggle_content">
+    <div class="mobile_res_toggle_content_cancle">
+       <a class="mobile_res_toggle_btn" style="font-size:20px;"><i class="fas fa-times" style="font-weight: 300;"></i></a></div>
+  
+    <ul class="mobile_res_toggle_list_1">
+     <li><a href="index.html">Home</a> </li>
+     <li><a href="shop.html">Shop</a> </li>
+     <li><a href="about.html">About</a> </li>
+     <li><a href="contact.html">Contact</a> </li>
+     </ul>
+ 
+ </div>
+
+  <!--  -->
+  <style>
+    .checkout_page_box_heading_section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .checkout_page_box_heading_box {
+      display: flex;
+      width: 100%;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--checkout_page_border_color_one);
+    }
+
+    .checkout_page_box_heading_box h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      text-transform: capitalize;
+      color: var(--checkout_page_heading_text_color);
+    }
+
+    .check_out_verification_steps_navigation {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 24px 0px;
+    }
+
+    .check_out_verification_steps_navigation_heading {
+      display: flex;
+      align-items: center;
+      padding-right: 17px;
+    }
+
+    .check_out_verification_steps_navigation_box {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .check_out_verification_steps_navigation_box i {
+      padding-right: 29px;
+      color: var(--checkout_page_heading_text_color);
+    }
+
+    .check_out_verification_steps_navigation_heading span {
+      margin-right: 6px;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: capitalize;
+      color: var(--check_out_verification_steps_navigation_num_text_color);
+      background: var(--check_out_verification_steps_navigation_num_bg_color);
+      border: 1px solid var(--check_out_verification_steps_navigation_num_border_color);
+    }
+
+    .check_out_verification_steps_navigation_heading h6 {
+      margin: 0px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: var(--check_out_verification_steps_navigation_heading_text_color);
+    }
+
+    span.first_step_check_out_navigation_num.active {
+      color: var(--check_out_verification_steps_navigation_num_active_text_color);
+      background-color: var(--check_out_verification_steps_navigation_num_active_bg_color);
+      border-color: var(--check_out_verification_steps_navigation_num_active_border_color);
+    }
+
+    h6.first_step_check_out_navigation_heading.active {
+      color: var(--check_out_verification_steps_navigation_heading_active_text_color);
+    }
+
+    span.second_step_check_out_navigation_num.active {
+      color: var(--check_out_verification_steps_navigation_num_active_text_color);
+      background-color: var(--check_out_verification_steps_navigation_num_active_bg_color);
+      border-color: var(--check_out_verification_steps_navigation_num_active_border_color);
+    }
+
+    h6.second_step_check_out_navigation_text.active {
+      color: var(--check_out_verification_steps_navigation_heading_active_text_color);
+    }
+
+    span.third_step_check_out_navigation_num.active {
+      color: var(--check_out_verification_steps_navigation_num_active_text_color);
+      background-color: var(--check_out_verification_steps_navigation_num_active_bg_color);
+      border-color: var(--check_out_verification_steps_navigation_num_active_border_color);
+    }
+
+    h6.third_step_check_out_navigation_text.active {
+      color: var(--check_out_verification_steps_navigation_heading_active_text_color);
+    }
+  </style>
+  <!--  -->
+  <div class="checkout_page_section">
+    <div class="custom_container">
+      <div class="checkout_page_box">
+        <!-- checkout details section start  -->
+        <div class="checkout_page_box_one">
+
+          <div class="checkout_page_box_heading_section">
+            <div class="checkout_page_box_heading_box">
+              <h2>Checkout</h2>
+            </div>
+            <div class="check_out_verification_steps_navigation">
+              <div class="check_out_verification_steps_navigation_box">
+                <div class="check_out_verification_steps_navigation_heading">
+                  <span class="first_step_check_out_navigation_num active">1</span>
+                  <h6 class="first_step_check_out_navigation_heading active">Shipping & Delivery</h6>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+              <div class="check_out_verification_steps_navigation_box">
+                <div class="check_out_verification_steps_navigation_heading">
+                  <span class="second_step_check_out_navigation_num">2</span>
+                  <h6 class="second_step_check_out_navigation_text">Payment</h6>
+                </div>
+                <!-- <i class="fas fa-angle-right"></i> -->
+              </div>
+              <!-- <div class="check_out_verification_steps_navigation_box">
+                  <div class="check_out_verification_steps_navigation_heading">
+                  <span class="third_step_check_out_navigation_num">3</span>
+                  <h6 class="third_step_check_out_navigation_text">Review Order</h6>
+                  </div>
+                </div> -->
+            </div>
+          </div>
+
+          <div class="check_out_verification_steps_main" id="check_out_verification_steps_main">
+            <div class="check_out_verification_steps">
+              <div class="check_out_shipping_method_box">
+                <div class="check_out_verification_steps_heading">
+                  <h2>Choose Shipping method:</h2>
+                </div>
+                <div class="check_out_shipping_method_btns">
+                  <a id="type_delivery_location" class="active">
+                    <i class="fas fa-truck" id="toggle_truck_icon"></i>
+                    <span id="toggle_delivery_text_color">Delivery</span>
+                  </a>
+                  <a id="select_pickup_location" class="">
+                    <i class="fas fa-map-marker-alt" id="toggle_location_tick_icon"></i>
+                    <span id="toggle_pickup_text_color">Pickup</span>
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="check_out_delivery_detail_box" id="type_delevery_address">
+
+                <div class="check_out_delivery_form_box">
+                  <form>
+                    <div class="check_out_delivery_form_content">
+                      <div class="check_out_delivery_form_fields_box">
+                        <div class="check_out_delivery_form_fields">
+                          <span>Full name*</span>
+                          <input type="text" placeholder="Enter your full name" />
+                          <label class="error">error message here</label>
+                        </div>
+                        <div class="check_out_delivery_form_fields">
+                          <span>Contact no.*</span>
+                          <input type="text" placeholder="Your contact number" />
+                          <label class="error">error message here</label>
+                        </div>
+                      </div>
+                      <div class="check_out_delivery_form_fields">
+                        <span>Complete address*</span>
+                        <input type="text" placeholder="Enter your full address" />
+                        <label class="error">error message here</label>
+                      </div>
+                      <div class="check_out_delivery_form_fields">
+                        <span>Door/appartment/suit(Optional)</span>
+                        <input type="text" placeholder="Enter your door/appartment/suit No." />
+                      </div>
+                      <div class="check_out_delivery_form_fields">
+                        <span>Special Instructions(Optional)</span>
+                        <textarea cols="20" rows="10" type="text" placeholder="Write your message here....."></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="check_out_pickup_detail_box" id="type_pickup_detail_address">
+
+                <div class="check_out_pickup_form_box">
+
+                  <form>
+                    <div class="check_out_shipping_method_box_pick_up_location_selector">
+                      <span>Choose pickup location:</span>
+                      <select>
+                        <option selected>Store location</option>
+                      </select>
+                      <label class="error">error message here</label>
+                      <small>Pickup from the store ready in 1 hour(s)</small>
+                    </div>
+
+                    <div class="check_out_shipping_method_box_pick_up_fields_heading">
+                      <h3>Pickup Details</h3>
+                    </div>
+                    <div class="check_out_delivery_form_content">
+                      <div class="check_out_delivery_form_fields_box">
+                        <div class="check_out_delivery_form_fields">
+                          <span>Full name*</span>
+                          <input type="text" placeholder="Enter your full name" />
+                          <label class="error">error message here</label>
+                        </div>
+                        <div class="check_out_delivery_form_fields">
+                          <span>Contact no.*</span>
+                          <input type="text" placeholder="Your contact number" />
+                          <label class="error">error message here</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+
+            </div>
+            <!--  -->
+            <style>
+              .check_out_varfication_navigation_btns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 32px;
+              }
+
+              .check_out_varfication_navigation_btns a {
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 25px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                border-radius: 4px;
+              }
+
+              .check_out_varfication_navigation_btns a i {
+                font-size: 12px;
+              }
+
+              .check_out_return_cart_btn {
+                background: #F6F6F6;
+                color: #212121 !important;
+              }
+
+              .check_out_return_cart_btn i {
+                padding-right: 7px;
+                color: #212121 !important;
+              }
+
+              .check_out_continue_payment_btn {
+                background: #5bcdf7;
+                color: #ffffff !important;
+              }
+
+              .check_out_continue_payment_btn i {
+                padding-left: 7px;
+                color: #ffffff;
+              }
+
+              @media(max-width:450px) {
+                .check_out_varfication_navigation_btns {
+                  flex-direction: column-reverse;
+                }
+
+                .check_out_varfication_navigation_btns a {
+                  width: 100%;
+                }
+
+                .check_out_varfication_navigation_btns a:nth-child(2) {
+                  margin-bottom: 12px;
+                }
+              }
+            </style>
+            <div class="check_out_varfication_navigation_btns">
+              <a class="check_out_return_cart_btn" id="check_out_return_cart_btn"><i class="fal fa-long-arrow-left"></i>
+                Return to cart</a>
+              <a class="check_out_continue_payment_btn" id="check_out_continue_payment_btn">Continue to payment <i
+                  class="fal fa-long-arrow-right"></i></a>
+            </div>
+            <!--  -->
+          </div>
+
+
+          <div class="check_out_payment_method_main_section" id="check_out_payment_method_main_section">
+            <div class="check_out_payment_method_box">
+              <div class="check_out_payment_method_heading">
+                <h2>Payment Details</h2>
+                <div class="check_out_payment_card_list">
+                  <img src="https://tossdown.site/images/5ef66dec806760d008d112ecaa3dc005_1640344673.png" />
+                  <img src="https://tossdown.site/images/88d9a1bf0919f1966c6566986f595e58_1640344719.png" />
+                  <img src="https://tossdown.site/images/273ca987329728409277b4ae3cc967ac_1640344757.png" />
+                </div>
+              </div>
+              <div class="check_out_payment_card_form">
+                <form>
+                  <div class="check_out_payment_card_form_field_main">
+                    <div class="check_out_payment_card_form_field">
+                      <span>Card Number</span>
+                      <input type="number" placeholder="xxxx xxxx xxxx xxxx" />
+                      <label class="error">error message</label>
+                    </div>
+                    <div class="check_out_payment_card_form_inner_field">
+                      <div class="check_out_payment_card_form_field">
+                        <span>MM/YY</span>
+                        <input type="date" placeholder="01/21" />
+                        <label class="error">error message</label>
+                      </div>
+                      <div class="check_out_payment_card_form_field">
+                        <span>CVV</span>
+                        <input type="number" placeholder="***" class="single_card_field" />
+                        <label class="error">error message</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="check_out_varfication_navigation_btns">
+              <a class="check_out_return_cart_btn" id="check_out_return_to_shipping"><i
+                  class="fal fa-long-arrow-left"></i> Back to shipping</a>
+              <a class="check_out_continue_payment_btn" id="">Pay Now <i class="fal fa-long-arrow-right"></i></a>
+            </div>
+
+          </div>
+
+          <div class="shopping_cart_product_list_box checkout_page_review_order" id="checkout_page_review_order">
+
+            <div class="shopping_cart_product_heading">
+              <div class="shopping_cart_product_heading_left">
+                <h2>Review Order</h2>
+              </div>
+            </div>
+
+            <div class="shopping_cart_product_list_main">
+              <div class="shopping_cart_product_list_header">
+                <div class="shopping_cart_product_list_header_ul">
+                  <div class="shopping_cart_product_list_header_li" style="width: 13%;">
+                    <p>Product</p>
+                  </div>
+                  <div class="shopping_cart_product_list_header_li_main">
+                    <div class="shopping_cart_product_list_header_li" style="width: 32%;">
+                      <p>Description</p>
+                    </div>
+                    <div class="shopping_cart_product_list_header_li" style="width: 24%;">
+                      <p>Price</p>
+                    </div>
+                    <div class="shopping_cart_product_list_header_li_main_two">
+                      <div class="shopping_cart_product_list_header_li" style="width: 54%;">
+                        <p>Quantity</p>
+                      </div>
+                      <div class="shopping_cart_product_list_header_li" style="width: 46%;">
+                        <p>Subtotal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping_cart_product_list_content">
+                <div class="shopping_cart_product_list_content_box">
+                  <div class="shopping_cart_product_list_ul">
+                    <div class="shopping_cart_product_list_ul_li" style="width: 13%;">
+                      <div class="shopping_cart_single_product_img">
+                        <img src="https://tossdown.site/images/1d0fa85e3222534a5c22bcc07c9970e5_1640156938.png"
+                          alt="imge">
+                      </div>
+                    </div>
+                    <div class="shopping_cart_product_list_ul_li_main" style="width: 100%;">
+                      <div class="shopping_cart_product_list_ul_li" style="width: 32%;">
+                        <div class="shopping_cart_single_product_discription">
+                          <span class="review_order_res_qty"><small>Quantity:</small>1<a
+                              style="font-size:10px;">x</a></span>
+                          <div class="shopping_cart_single_product_name">
+                            <p>Discription of product comes here</p>
+                            <a>Show Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shopping_cart_product_list_ul_li" style="width: 24%;">
+                        <div class="shopping_cart_single_product_price">
+                          <p>CAD 50.99</p>
+                        </div>
+                      </div>
+                      <div class="shopping_cart_product_list_ul_li_main_two" style="width: 44%;">
+                        <div class="shopping_cart_product_list_ul_li" style="width: 54%;"
+                          class="product_qty_btn_center_align_class">
+                          <div class="shopping_cart_single_product_qty_btn">
+                            <a class="counter_minus_btn review_order_counter_btns"><i class="fa fa-minus"></i></a>
+                            <span class="review_order_total_product_qty">1</span>
+                            <a class="counter_plus_btn review_order_counter_btns"><i class="fa fa-plus"></i></a>
+                          </div>
+                        </div>
+
+                        <div class="shopping_cart_product_list_ul_li" style="width: 46%;position: relative;">
+                          <div class="shopping_cart_single_product_subtotal">
+                            <div
+                              class="shopping_cart_single_product_subtotal_prices review_order_screen_subtotal_prices">
+                              <p>CAD 50.99</p> <small>CAD 55.99</small>
+                            </div>
+                            <span class="review_order_screen_product_del_btn"><a><i class="fas fa-times"></i></a></span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="check_out_varfication_navigation_btns">
+                <a class="check_out_return_cart_btn" id="check_out_return_payment_screen_btn"><i
+                    class="fal fa-long-arrow-left"></i>Back to Payment</a>
+                <a class="check_out_continue_payment_btn">Edit Cart<i class="fal fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- checkout details section End  -->
+        <style>
+      
+          .checkout_order_detail_main {
+            display: flex;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 15px;
+    background-color: #fff;
+          }
+
+          .checkout_order_detail_list {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+          }
+
+          .checkout_order_detail_single_list {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            
+          }
+          .checkout_order_detail_single_list:last-child{
+            padding-bottom: 0px;
+          }
+
+          .checkout_order_detail_single_list_detail {
+            display: flex;
+            align-items: center;
+            width: 100%;
+          }
+
+          .checkout_order_detail_single_list_detail figure {
+            min-width: 48px;
+            max-width: 50px;
+            height: 48px;
+            margin-bottom: 0px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 5px;
+            margin-right: 14px;
+            position: relative;
+          }
+
+          .checkout_order_detail_single_list_detail figure img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .checkout_order_detail_single_list_detail span.review_order_res_qty {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            position: absolute;
+            top: -4px;
+            right: -11px;
+            justify-content: center;
+           
+          }
+
+          .checkout_order_detail_single_list_name {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .checkout_order_detail_single_list_name p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+           color: #000;
+           margin-bottom: 0px;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           
+          }
+
+          .checkout_order_detail_single_list_name a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration-line: underline;
+          color: #000;
+            padding-top: 2px;
+            
+          }
+
+          .checkout_order_detail_single_list_price p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+          }
+
+          .checkout_order_detail_single_list_price p span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+          color: #000;
+            padding-left: 4px;
+           
+          }
+
+          .checkout_order_detail_single_list_price p small {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000;
+          }
+
+        </style>
+        <!-- Cart bill Summary section start -->
+       
+        <div class="checkout_page_box_two">
+
+         
+                <div class="checkout_order_detail_main">
+  
+                  <div class="checkout_order_detail_list">
+  
+                    <div class="checkout_order_detail_single_list">
+                      <div class="checkout_order_detail_single_list_detail">
+                        <figure>
+                          <img src="https://static.tossdown.com/images/600/ed31ad8b-bcd1-4d94-b286-333484859dc6.webp"
+                            alt="Image">
+                          <span class="review_order_res_qty">2</span>
+                        </figure>
+                        <div class="checkout_order_detail_single_list_des">
+                          <div class="checkout_order_detail_single_list_name">
+                            <p>Chicken Biryani</p>
+  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="checkout_order_detail_single_list_price">
+  
+                        <p>
+                          <small> CAD </small> <span>15.95 </span>
+                        </p>
+                        <!--
+                                                          <h6></h6>
+                                                      -->
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+            
+          <div class="shopping_cart_total_bill_box">
+            <div class="shopping_cart_total_bill_box_heading">
+              <h5>Cart Summary</h5>
+            </div>
+            <div class="shopping_cart_total_bill_box_content">
+              <div class="shopping_cart_total_bill_box_inner_content">
+                <div class="total_bill_box_inner_subtotal_heading">
+                  <p>Subtotal</p><small>3 Item(s)</small>
+                </div><span>$ 100.99</span>
+              </div>
+
+              <div class="shopping_cart_total_bill_box_inner_content">
+                <p>Shipping</p><span>$ 5.99</span>
+              </div>
+
+            </div>
+
+
+            <div class="shopping_cart_total_bill_divider shopping_cart_total_bill_first_divider"></div>
+
+
+
+            <div class="shopping_cart_total_bill_divider"></div>
+
+            <div class="shopping_cart_total_bill_final_price_box">
+              <p>Total</p><span>$ 129.99</span>
+            </div>
+
+            <!-- <div class="shopping_cart_total_bill_proceeding_btn"><a>Proceed to checkout</a></div> -->
+          </div>
+        </div>
+
+        <!-- Cart bill Summary section End -->
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <section class="footer-section">
+    <div class="custom-container">
+    <div class="footer-data-box">
+    <div class="footer-data-box-detail ">
+    <div class="footer-detail-box-one">
+    <figure>
+      <img src="images/logo.png" /> 
+    </figure>
+    <p>We are wholesale distributors of Restaurant and Industrial supplies.</p>
+    <h3>Follow us on:</h3>
+    <div class="footer-socail-links"><a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a> <a href="https://linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a></div>
+    </div>
+    </div>
+    <div class="footer-data-box-detail">
+    <div class="footer-detail-box-two">
+    <div class="footer-detail-box-heading accordion modtitle">
+    <h3 class="footer-collapse-icons">Site Links</h3>
+    </div>
+    <div class="modcontent panel">
+    <ul class="footer-detail-box-content-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">New Arrivals</a></li>
+    <li><a href="shop.html">Sales</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="location.html">Location</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="footer-data-box-detail">
+    <div class="footer-detail-box-two">
+    <div class="footer-detail-box-heading accordion modtitle">
+    <h3 class="footer-collapse-icons">Useful Links</h3>
+    </div>
+    <div class="modcontent panel">
+    <ul class="footer-detail-box-content-list">
+    <li><a>Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="">My Orders</a></li>
+    <li><a href="login.html">Login/Signup</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="footer-data-box-detail">
+    <div class="footer-detail-box-two">
+    <div class="footer-detail-box-heading accordion modtitle">
+    <h3 class="footer-collapse-icons">Categories</h3>
+    </div>
+    <div class="modcontent panel">
+    <ul class="footer-detail-box-content-list">
+    <li><a href="shop.html">Aluminum Foil</a></li>
+    <li><a href="shop.html">Aluminum Pan</a></li>
+    <li><a href="shop.html">Aprons</a></li>
+    <li><a href="shop.html">Jet Foil</a></li>
+    <li><a href="shop.html">HFA</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="footer-data-box-detail">
+    <div class="footer-detail-box-two ">
+    <div class="footer-detail-box-heading accordion modtitle">
+    <h3 class="footer-collapse-icons">Contact</h3>
+    </div>
+    <div class="modcontent panel accordion modtitle">
+    <ul class="footer-contact-list ">
+    <li><i class="fal fa-phone" aria-hidden="true"></i><a href="tel:  (905) 444-8585"> (905) 444-8585</a></li>
+    <li><i class="fal fa-envelope" aria-hidden="true"></i><a href="mailto:info@gmail.com">info@gmail.com</a></li>
+    <li><i class="fal fa-map-marker-alt" aria-hidden="true"></i><a>900 Hopkins Street, Unit #2 Whitby, ON</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </footer>
+
+  <script>
+    $("#type_delivery_location").click(function () {
+
+      $("#type_delivery_location").css("background", "var(--check_out_shipping_method_btn_bg_active_color)");
+      $("#select_pickup_location").css("background", "unset");
+
+      $("#toggle_truck_icon").css("color", "var(--check_out_shipping_method_btn_icon_active_color)");
+      $("#toggle_location_tick_icon").css("color", "var(--check_out_shipping_method_btn_icon_color)");
+
+      $("#toggle_delivery_text_color").css("color", "var(--check_out_shipping_method_btn_text_active_color)");
+      $("#toggle_pickup_text_color").css("color", "var(--check_out_shipping_method_btn_text_color)");
+
+      $("#type_delevery_address").css("display", "block");
+      $("#type_pickup_detail_address").css("display", "none");
+
+      $("#type_delivery_location").addClass("active");
+
+      $("#select_pickup_location").removeClass("active");
+    });
+
+    $("#select_pickup_location").click(function () {
+
+      $("#select_pickup_location").css("background", "var(--check_out_shipping_method_btn_bg_active_color)");
+      $("#type_delivery_location").css("background", "unset");
+
+      $("#toggle_location_tick_icon").css("color", "var(--check_out_shipping_method_btn_icon_active_color)");
+      $("#toggle_truck_icon").css("color", "var(--check_out_shipping_method_btn_icon_color)");
+
+      $("#toggle_pickup_text_color").css("color", "var(--check_out_shipping_method_btn_text_active_color)");
+      $("#toggle_delivery_text_color").css("color", "var(--check_out_shipping_method_btn_text_color)");
+
+      $("#type_delevery_address").css("display", "none");
+      $("#type_pickup_detail_address").css("display", "block");
+
+      $("#type_delivery_location").removeClass("active");
+
+      $("#select_pickup_location").addClass("active");
+    });
+
+
+    $("#check_out_continue_payment_btn").click(function () {
+
+      $(".second_step_check_out_navigation_num").addClass("active");
+      $(".second_step_check_out_navigation_text").addClass("active");
+
+      $(".third_step_check_out_navigation_num").removeClass("active");
+      $(".third_step_check_out_navigation_text").removeClass("active");
+
+      $("#check_out_verification_steps_main").css("display", "none");
+      $("#check_out_payment_method_main_section").css("display", "block");
+      $("#checkout_page_review_order").css("display", "none");
+
+
+    });
+
+    $("#check_out_return_to_shipping").click(function () {
+
+      $(".second_step_check_out_navigation_num").removeClass("active");
+      $(".second_step_check_out_navigation_text").removeClass("active");
+
+      $(".third_step_check_out_navigation_num").removeClass("active");
+      $(".third_step_check_out_navigation_text").removeClass("active");
+
+      $(".first_step_check_out_navigation_num").addClass("active");
+      $(".first_step_check_out_navigation_text").addClass("active");
+
+      $("#check_out_verification_steps_main").css("display", "block");
+      $("#check_out_payment_method_main_section").css("display", "none");
+      $("#checkout_page_review_order").css("display", "none");
+    });
+
+
+    $("#check_out_continue_review_order_btn").click(function () {
+
+
+      $(".third_step_check_out_navigation_num").addClass("active");
+      $(".third_step_check_out_navigation_text").addClass("active");
+
+      $("#check_out_verification_steps_main").css("display", "none");
+      $("#check_out_payment_method_main_section").css("display", "none");
+      $("#checkout_page_review_order").css("display", "flex");
+
+    });
+
+
+    $("#check_out_return_payment_screen_btn").click(function () {
+
+      $(".third_step_check_out_navigation_num").removeClass("active");
+      $(".third_step_check_out_navigation_text").removeClass("active");
+
+      $("#check_out_verification_steps_main").css("display", "none");
+      $("#check_out_payment_method_main_section").css("display", "block");
+      $("#checkout_page_review_order").css("display", "none");
+
+    });
+
+  </script>
+</body>
+
+</html>
